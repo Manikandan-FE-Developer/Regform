@@ -1,0 +1,155 @@
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-weight: bold;
+}
+h1{
+	background-image: linear-gradient(
+    to bottom right,
+      purple,
+      violet,
+      purple
+    );
+	color:yellow;
+	text-align: center;
+	padding: 15px;
+	border-radius: 15px;
+}
+h3{
+  background-color:brown;
+  color:white;    
+  font-weight:italic;  
+  border-radius: 5px;
+}
+.p1{
+	color: green;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: cursive;
+	text-shadow: 1px 1px yellow;
+}
+.p2{
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 50px;
+	text-align: center;
+	width:320px;
+	background: url('flowerpng.jpg');
+	~webkit-background-clip:text;
+	background-clip: text;
+	~webkit-text-fill-color:transparent;
+	animation: text 7.5s linear infinite;
+}
+@keyframes text{
+	from{
+		background-position: 0% 50%;
+	}
+	to {
+		background-position: 10% 10%;
+	}
+}
+.btn{
+  font-weight: bold;
+  color:red;
+  padding:10px;
+  border-style: outset;
+  background-color: white;
+  width:40px;
+  text-decoration: none;
+}
+.btn:hover{
+   background-color:red;
+   color:white;
+}
+:root {
+  --link-size: 54px;
+  --trans-props: all 0.3s ease;
+}
+.wrapper,
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+/*** Containers and icons ***/
+.social-icon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.social-icon i {
+  margin: auto;
+  font-size: 24px;
+  color: hsl(212, 16%, 48%);
+  z-index: 1; 
+  transition: var(--trans-props);
+}
+/*** Branded overlays from the bottom ***/
+.social-icon:after {
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-props);
+}
+.social-icon.twitter:after {
+  background-color: #1da1f2;
+}
+.social-icon.github:after {
+  background-color: #24292e;
+}
+.social-icon.instagram:after {
+  background-image: linear-gradient(
+    to bottom left,
+    #4f5bd5,
+    #962fbf,
+    #d62976,
+    #fa7e1e,
+    #feda75
+  );
+}
+/*** Animations ***/
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+}
+.social-icon:hover i {
+  color: #fff;
+}
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+footer{
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  background-color: grey;
+  padding: 15px;
+  border-radius: 15px;
+}
+img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+@media (max-width: 375px){
+  .btn{
+    margin-left: 140px;
+  }
+}
