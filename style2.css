@@ -1,0 +1,64 @@
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+h1{
+	background: purple;
+	color:yellow;
+	text-align: center;
+	padding: 15px;
+	border-radius: 15px;
+}
+.p1{
+	color: green;
+	background-color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: cursive;
+}
+.p2{
+	color: blue;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 50px;
+	text-align: center;
+	background: url('flowerpng.jpg');
+	~webkit-background-clip:text;
+	background-clip: text;
+	~webkit-text-fill-color:transparent;
+	animation: text 7.5s linear infinite;
+}
+@keyframes text{
+	from{background-position: 0% 50%;}
+	to {background-position: 10% 10%;}
+}
+.btn{
+  font-weight: bold;
+  color:red;
+  padding:10px;
+  border-style: outset;
+  background-color: white;
+  width:40px;
+  text-decoration: none;
+}
+.btn:hover{
+   background-color:red;
+   color:white;
+}
+footer{
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  background-color: grey;
+  padding: 15px;
+  padding-bottom: 5px;
+}
+img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
